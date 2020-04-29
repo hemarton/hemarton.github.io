@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Colorful nonsense</title>
+  <style>
+    body {
+  display: block;  
+  width: 1000px;
+  margin: auto;
+}
+
+header {
+  background: aqua;
+  flex-grow: 1;
+  height: 150px;
+}
+
+section {
+  display: flex;
+  height: 1000px;
+}
+
+main {
+  display: flex;
+  background: red;
+  flex-grow: 4;
+  margin: 0 3% 0;
+  position: relative;
+}
+
+div {
+  display: flex;
+  background: black;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 2%;
+  right: 4%;
+  transition: 1s;
+}
+
+div:hover {
+  transition: 1s;
+  width: 120px;
+  height: 120px;
+}
+
+sidebar-left {
+  display: flex;
+  background: orange;
+  flex-grow: 1;
+}
+
+sidebar-right {
+  display: flex;
+  background: purple;
+  flex-grow: 1;
+}
+
+footer {
+  display: flex;
+  height: 150px;
+  background: blue;
+}
+  </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <header></header>
+  <section>
+  <sidebar-left></sidebar-left>
+  <main>
+    <div></div>
+  </main>
+  <sidebar-right></sidebar-right>
+  </section>
+  <footer></footer>
+</body>
+<!-- partial -->
+  
+</body>
+</html>

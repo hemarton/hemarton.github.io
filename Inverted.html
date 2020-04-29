@@ -15,24 +15,40 @@ header {
   overflow: hidden;
   height: 100vh;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2017/17_04_cat_bg_03.jpg) 50%/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 h2 {
+/* Trying to center the text vertically - but this destroys the alignment with the background:
+  margin-top: 30vh;*/
   height: inherit;
   background: inherit;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font: 900 35vmin/50vh cookie, cursive;
+  font: 900 35vmin/30vh cookie, cursive;
   text-align: center;
   filter: invert(1) grayscale(1) contrast(9);
+}
+p {
+  position: absolute;
+  width: 100vw;
+  bottom: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
 }
 </style>
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <header>
-	<h2 contentEditable role='textbox' aria-multiline='true' >And stay alive</h2>
+  <h2 contentEditable role='textbox' aria-multiline='true' >And stay alive</h2>
+  <p>(Found on codepen.io - forked <a href="https://codepen.io/hemarton/pen/WNQOeLp">here</a>)</p>
 </header>
 <!-- partial -->
   
